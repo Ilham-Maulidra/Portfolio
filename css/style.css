@@ -1,8 +1,12 @@
 html{
     position: relative;
 }
+nav {
+    height: 50px;
+}
 body{
     margin-bottom: 80px;
+    margin-top: 40px;
 }
 .jumbotron img{
     width: 200px;
