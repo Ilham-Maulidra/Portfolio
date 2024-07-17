@@ -1,9 +1,9 @@
 html{
     position: relative;
 }
-nav {
+/* nav {
     height: 50px;
-}
+} */
 body{
     margin-bottom: 80px;
     margin-top: 40px;
@@ -14,13 +14,13 @@ body{
 }
 hr {
     width: 250px;
-    border-top: 3px solid #999;
+    border-top: 4px solid #333;
 }
 section {
     min-height: 700px;
 }
 .portfolio {
-    background-color: #999;
+    background-color: #bbb;
 }
 
 footer {
