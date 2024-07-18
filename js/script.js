@@ -17,8 +17,16 @@ $('.page-scroll').on('click', function(e){
 });
 
 //Effect Paralax
+//About
+$(window).on('load', function(){
+    $('.pKiri').addClass('pMuncul');
+    $('.pKanan').addClass('pMuncul');
+});
+
 $(window).scroll(function(){
 	// console.log('ok');
+
+    // Jumbotron
 	var wScroll = $(this).scrollTop();
 	$('.jumbotron img').css({
 		'transform' : 'translate(0px, '+ wScroll/4 +'%)'
@@ -30,4 +38,13 @@ $(window).scroll(function(){
     $('.jumbotron p').css({
 		'transform' : 'translate(0px, '+ wScroll/1.2 +'%)'
 	});
+
+    // Portfolio
+    if(wScroll > $('.portfolio').offset().top - 250 ){
+        $('.portfolio .thumbnail').each(function(i){
+            setTimeout(function(){
+                $('.portfolio .thumbnail').eq(i).addClass('muncul');
+            }, 300 * (i+1));
+        });
+    }
 });

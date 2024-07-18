@@ -33,8 +33,29 @@ hr {
 section {
     min-height: 700px;
 }
+.pKiri, .pKanan {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1.5s;
+}
+.pKanan{
+    transform: translate(50px, 0);
+}
+.pKanan.pMuncul, .pKiri.pMuncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
 .portfolio {
     background-color: #bbb;
+}
+.portfolio .thumbnail {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: .5s;
+}
+.portfolio .thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 footer {
