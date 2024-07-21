@@ -10,7 +10,7 @@ body{
 }
 
 .jumbotron {
-    height: 400px;
+    height: 100%;
     background-image: url('../img/bgheader.jpg');
     background-attachment: fixed;
     background-size: 1150px;
@@ -24,6 +24,7 @@ body{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
 }
 .jumbotron h1, .jumbotron p {
+    font-size: auto;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 hr {
